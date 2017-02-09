@@ -1,10 +1,15 @@
 function findMinMax(num){
+    if(Array.isArray(num)) {
 	var max = getmax(num);
 	var min=getmin(num);
 	if(max==min)
 		return [max];
 	var f=[min,max];
 	return f;
+  }
+  else{
+    return "please, input an array";
+}
 }
 function getmax(num) {
         var ma = num[0];

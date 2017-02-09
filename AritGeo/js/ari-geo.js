@@ -1,5 +1,6 @@
 function aritGeo(arr)
 {
+    if(Array.isArray(arr)) {
 	if(arr.length==0)
 	return 0;
     var array_type = -1;
@@ -31,4 +32,7 @@ function aritGeo(arr)
         }
     }
     return array_type;
+}else{
+    return "please, input an array.";
+}
 }
