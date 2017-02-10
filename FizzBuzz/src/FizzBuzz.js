@@ -1,7 +1,4 @@
-function FizzBuzz() {
-}
-
-FizzBuzz.prototype.fizzBuzz=function(num1){
+function fizzBuzz(num1){
 	if(isNaN(num1)){
 		return "please, input a number";
 	}
@@ -20,4 +17,4 @@ FizzBuzz.prototype.fizzBuzz=function(num1){
     return "Buzz";
    }
 
-};
+}
