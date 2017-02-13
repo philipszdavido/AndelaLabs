@@ -1,31 +1,12 @@
-function findMinMax(num){
-    if(Array.isArray(num)) {
-	var max = getmax(num);
-	var min=getmin(num);
-	if(max==min)
-		return [max];
-	var f=[min,max];
-	return f;
+function findMinMax(numbers){
+    if(Array.isArray(numbers)) {
+	var maximumNumber = Math.max.apply(null,numbers);//getmax(num);
+	var minimumNumber=Math.min.apply(null,numbers);//getmin(num);
+	if(maximumNumber==minimumNumber)
+		return [maximumNumber];
+	[minimumNumber,maximumNumber];
+	
   }
   else{
     return "please, input an array";
-}
-}
-function getmax(num) {
-        var ma = num[0];
-    for (var i = 0; i < num.length; i++) {
-        if (num[i] > ma) {
-            ma = num[i];
-        }
-    }
-    return ma;
-}
-function getmin(num) {
-	        var m = num[0];
-    for (var i = 0; i < num.length; i++) {
-        if (num[i] < m) {
-            m = num[i];
-        }
-    }
-return m;
-}
+}}
